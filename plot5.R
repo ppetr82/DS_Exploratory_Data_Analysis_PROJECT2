@@ -20,7 +20,7 @@ minPlot5Y <- round_any(min(aggPlot5$Emissions), 100, floor)
 maxPlot5Y <- round_any(max(aggPlot5$Emissions), 100, ceiling)
 seqPlot5Y <- seq(minPlot5Y, maxPlot5Y, length.out = 3)
 
-plot(aggPlot5, type="b", axes = F, ylim=c(minPlot5Y, maxPlot5Y), main = "Total Motor Vehicles Related PM25 Emissions \nin Baltimore", ylab = "Emissions (tons)")
+plot(aggPlot5, type="b", axes = F, ylim=c(minPlot5Y, maxPlot5Y), main = "Total Motor Vehicles Related PM25 Emissions \nin Baltimore City", ylab = "Emissions (tons)")
 axis(side=1, at=aggPlot5$Year)
 axis(side=2, at=seqPlot5Y)
 box()

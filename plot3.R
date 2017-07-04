@@ -17,11 +17,11 @@ aggPlot3 <- setNames(aggregate(subsetPlot3$Emissions, by = list(year = subsetPlo
 plot3 <- (ggplot(aggPlot3, aes(x=aggPlot3$Year, y=aggPlot3$Emissions)) 
           + geom_line() 
           + geom_point(shape=1) 
-          + ggtitle("Total PM25 Emissions by Year and Type in Baltimore") 
+          + ggtitle("Total PM25 Emissions by Year and Type in Baltimore City") 
           + labs(x="Year",y="Emissions (tons)")) 
 plot3 <- plot3 + scale_x_discrete(name ="Year", limits=aggPlot3$Year) + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 plot3 <- plot3 + facet_grid(. ~ aggPlot3$Type)
 plot3
 
 # save plot to the file
-ggsave("plog3.png")
+ggsave("plot3.png")

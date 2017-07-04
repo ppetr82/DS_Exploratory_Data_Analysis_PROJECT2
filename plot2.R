@@ -16,7 +16,7 @@ minPlot2Y <- round_any(min(aggPlot2$Emissions), 1000, floor)
 maxPlot2Y <- round_any(max(aggPlot2$Emissions), 1000, ceiling)
 seqPlot2Y <- seq(minPlot2Y, maxPlot2Y, length.out = 3)
 
-plot(aggPlot2, type="b", axes = F, ylim=c(minPlot2Y, maxPlot2Y) , main = "Total PM25 Emissions In Baltimore", ylab = "Emissions (tons)")
+plot(aggPlot2, type="b", axes = F, ylim=c(minPlot2Y, maxPlot2Y) , main = "Total PM25 Emissions In Baltimore City", ylab = "Emissions (tons)")
 axis(side=1, at=aggPlot2$Year)
 axis(side=2, at=seqPlot2Y)
 box()
