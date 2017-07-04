@@ -1,4 +1,4 @@
-# plot1.R
+# plot2.R
 
 # set working directory and environment
 setwd("/Users/petrpodrouzek/Documents/coursera/DS_Exploratory_Data_Analysis_PROJECT2")
