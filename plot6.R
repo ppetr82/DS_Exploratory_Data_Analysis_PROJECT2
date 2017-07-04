@@ -46,9 +46,6 @@ plot6 <- plot6 + facet_grid(aggPlot6Summary$variableText ~ aggPlot6Summary$Flips
 plot6
 
 # save plot to the file
-dev.copy(png, 
-         "plot6.png",
-         height=480,
-         width=480)
-dev.off()
+ggsave("plot6.png")
+
 

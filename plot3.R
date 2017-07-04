@@ -24,8 +24,4 @@ plot3 <- plot3 + facet_grid(. ~ aggPlot3$Type)
 plot3
 
 # save plot to the file
-dev.copy(png, 
-         "plot3.png",
-         height=480,
-         width=480)
-dev.off()
+ggsave("plog3.png")
